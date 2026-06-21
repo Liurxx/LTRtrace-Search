@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=CenSoloLTR-Search
+Comment=A cross-species SoloLTR transposable element database for 18 legume species
+Exec=CenSoloLTR-Search
+Icon=CenSoloLTR-Search
+Type=Application
+Categories=Science;Biology;
+Terminal=false
+StartupWMClass=CenSoloLTR-Search
