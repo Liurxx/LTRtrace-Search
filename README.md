@@ -1,6 +1,6 @@
-# CenSoloLTR-Search
+# LTRtrace-Search
 
-CenSoloLTR-Search is a user-friendly cross-platform desktop application designed for searching, browsing, and analysing de novo annotated centromeric and pericentromeric SoloLTRs.
+LTRtrace-Search is a user-friendly cross-platform desktop application designed for searching, browsing, and analysing de novo annotated centromeric and pericentromeric SoloLTRs.
 
 Created as a dedicated visualization tool, this application independently packages the comprehensive database originally bundled with the CenSoloLTR software. It provides researchers with an intuitive graphical interface to easily access, visualize, and interact with complex structural annotation data across 18 legume (Fabaceae) genomes, eliminating the need for command-line operations.
 
@@ -37,13 +37,13 @@ Created as a dedicated visualization tool, this application independently packag
 Download the AppImage, make it executable, and run:
 
 ```bash
-chmod +x CenSoloLTR-Search-1.0.0-x86_64.AppImage
-./CenSoloLTR-Search-1.0.0-x86_64.AppImage
+chmod +x LTRtrace-Search-1.0.0-x86_64.AppImage
+./LTRtrace-Search-1.0.0-x86_64.AppImage
 ```
 
 ### Windows
 
-Download and run `CenSoloLTR-Search-Setup-1.0.0.exe`. The setup wizard will guide you through the installation process. Once completed, launch the application from the Start Menu or your desktop shortcut.
+Download and run `LTRtrace-Search-Setup-1.0.0.exe`. The setup wizard will guide you through the installation process. Once completed, launch the application from the Start Menu or your desktop shortcut.
 
 ## Quick Start
 

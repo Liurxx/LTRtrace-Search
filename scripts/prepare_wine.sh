@@ -1,6 +1,6 @@
 #!/bin/bash
 #=============================================================================
-# CenSoloLTR-Search — Prepare Wine Build Environment (run once)
+# LTRtrace-Search — Prepare Wine Build Environment (run once)
 # Prerequisites: wine, wget
 #=============================================================================
 set -e

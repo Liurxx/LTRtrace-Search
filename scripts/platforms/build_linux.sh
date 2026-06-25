@@ -1,6 +1,6 @@
 #!/bin/bash
 #=============================================================================
-# CenSoloLTR-Search — Linux Build (AppImage, self-contained with data)
+# LTRtrace-Search — Linux Build (AppImage, self-contained with data)
 # Usage: bash scripts/platforms/build_linux.sh [VERSION]
 #=============================================================================
 set -e
@@ -13,10 +13,10 @@ BUILD_DIR="${PKG_DIR}/build/linux"
 RESOURCES_DIR="${PKG_DIR}/resources"
 
 VERSION="${1:-1.0.0}"
-APP_NAME="CenSoloLTR-Search"
+APP_NAME="LTRtrace-Search"
 
 echo "╔══════════════════════════════════════════════╗"
-echo "║  CenSoloLTR-Search v${VERSION} — Linux Build  ║"
+echo "║  LTRtrace-Search v${VERSION} — Linux Build  ║"
 echo "╚══════════════════════════════════════════════╝"
 
 # ── Prerequisites ──
@@ -135,18 +135,18 @@ echo "    Total data staged: $(du -sh "${DATA_DIR}" 2>/dev/null | cut -f1)"
 # ── Desktop integration files ──
 cp "${RESOURCES_DIR}/icon.png" \
     "${APPDIR}/usr/share/icons/hicolor/256x256/apps/${APP_NAME}.png" 2>/dev/null || true
-cp "${RESOURCES_DIR}/CenSoloLTR-Search.desktop" \
+cp "${RESOURCES_DIR}/LTRtrace-Search.desktop" \
     "${APPDIR}/usr/share/applications/" 2>/dev/null || true
 
 # AppImage requires .desktop + icon at AppDir root
-cp "${RESOURCES_DIR}/CenSoloLTR-Search.desktop" "${APPDIR}/" 2>/dev/null || true
+cp "${RESOURCES_DIR}/LTRtrace-Search.desktop" "${APPDIR}/" 2>/dev/null || true
 cp "${RESOURCES_DIR}/icon.png" "${APPDIR}/${APP_NAME}.png" 2>/dev/null || true
 
 cat > "${APPDIR}/AppRun" << 'APPRUN'
 #!/bin/bash
 HERE="$(dirname "$(readlink -f "$0")")"
 export PATH="${HERE}/usr/bin:${HERE}/usr/bin/blast:${PATH}"
-exec "${HERE}/usr/bin/CenSoloLTR-Search" "$@"
+exec "${HERE}/usr/bin/LTRtrace-Search" "$@"
 APPRUN
 chmod +x "${APPDIR}/AppRun"
 

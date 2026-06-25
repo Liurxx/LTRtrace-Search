@@ -1,5 +1,5 @@
 ;═══════════════════════════════════════════════════════════════════════════
-;  CenSoloLTR-Search — Windows Installer (Bilingual: EN + ZH)
+;  LTRtrace-Search — Windows Installer (Bilingual: EN + ZH)
 ;  Built with NSIS 3.x   |   Build: makensis installer.nsi
 ;═══════════════════════════════════════════════════════════════════════════
 
@@ -7,12 +7,12 @@ Unicode true
 ManifestDPIAware true
 
 ;─── Product ──────────────────────────────────────────────────────────────
-!define PRODUCT_NAME        "CenSoloLTR-Search"
+!define PRODUCT_NAME        "LTRtrace-Search"
 !ifndef PRODUCT_VERSION
   !define PRODUCT_VERSION   "1.0.0"
 !endif
 !define PRODUCT_PUBLISHER   "CenSoloLTR Lab"
-!define PRODUCT_WEB_SITE    "https://github.com/xxx/CenSoloLTR-Search"
+!define PRODUCT_WEB_SITE    "https://github.com/xxx/LTRtrace-Search"
 !define PRODUCT_REGKEY      "Software\${PRODUCT_NAME}"
 
 ;─── Compression ──────────────────────────────────────────────────────────

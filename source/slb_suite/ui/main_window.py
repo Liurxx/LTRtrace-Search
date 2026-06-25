@@ -20,7 +20,7 @@ class MainWindow(QMainWindow):
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle(f"CenSoloLTR-Search v{__version__}")
+        self.setWindowTitle(f"LTRtrace-Search v{__version__}")
         self.resize(1400, 900)
         self._db_ready: bool = False
         self._current_species: str = ""
@@ -107,8 +107,8 @@ class MainWindow(QMainWindow):
 
     def _show_about(self):
         QMessageBox.about(
-            self, "About CenSoloLTR-Search",
-            f"<h3>CenSoloLTR-Search v{__version__}</h3>"
+            self, "About LTRtrace-Search",
+            f"<h3>LTRtrace-Search v{__version__}</h3>"
             "<p>A cross-species SoloLTR transposable element database "
             "integrating annotation data from 18 legume species "
             "into a unified, interactive desktop application "

@@ -1,6 +1,6 @@
 #!/bin/bash
 #=============================================================================
-# CenSoloLTR-Search — Master Build Script
+# LTRtrace-Search — Master Build Script
 #
 # Builds installers for all platforms supported on this machine.
 #
@@ -20,7 +20,7 @@ TARGET="${2:-auto}"
 echo ""
 echo "╔══════════════════════════════════════════════╗"
 echo "║                                              ║"
-echo "║       CenSoloLTR-Search v${VERSION}            ║"
+echo "║       LTRtrace-Search v${VERSION}            ║"
 echo "║       Cross-Platform Package Builder         ║"
 echo "║                                              ║"
 echo "╚══════════════════════════════════════════════╝"

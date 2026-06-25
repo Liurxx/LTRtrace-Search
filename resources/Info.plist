@@ -5,17 +5,17 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>CenSoloLTR-Search</string>
+	<string>LTRtrace-Search</string>
 	<key>CFBundleExecutable</key>
-	<string>CenSoloLTR-Search</string>
+	<string>LTRtrace-Search</string>
 	<key>CFBundleIconFile</key>
-	<string>CenSoloLTR-Search.icns</string>
+	<string>LTRtrace-Search.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.censololtr.search</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>CenSoloLTR-Search</string>
+	<string>LTRtrace-Search</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

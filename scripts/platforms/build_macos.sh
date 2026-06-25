@@ -1,6 +1,6 @@
 #!/bin/bash
 #=============================================================================
-# CenSoloLTR-Search — macOS Build (self-contained .dmg with all data)
+# LTRtrace-Search — macOS Build (self-contained .dmg with all data)
 #
 # MUST run on macOS. Unlike Windows (Wine), there is no mature macOS
 # compatibility layer on Linux for building GUI app bundles.
@@ -26,11 +26,11 @@ BUILD_DIR="${PKG_DIR}/build/macos"
 RESOURCES_DIR="${PKG_DIR}/resources"
 
 VERSION="${1:-1.0.0}"
-APP_NAME="CenSoloLTR-Search"
+APP_NAME="LTRtrace-Search"
 BUNDLE_NAME="${APP_NAME}.app"
 
 echo "╔══════════════════════════════════════════════╗"
-echo "║  CenSoloLTR-Search v${VERSION} — macOS Build   ║"
+echo "║  LTRtrace-Search v${VERSION} — macOS Build   ║"
 echo "╚══════════════════════════════════════════════╝"
 
 # ── Platform check ──
@@ -128,14 +128,14 @@ echo ">>> Binary: $(du -h "${BUILD_DIR}/dist/${APP_NAME}" | cut -f1)"
 # ── Assemble .app bundle ──
 # Directory layout (designed to work with config.py):
 #
-#   CenSoloLTR-Search.app/
+#   LTRtrace-Search.app/
 #   └── Contents/
 #       ├── Info.plist
 #       ├── MacOS/
-#       │   ├── CenSoloLTR-Search      ← PyInstaller binary
+#       │   ├── LTRtrace-Search      ← PyInstaller binary
 #       │   └── blast/                 ← BLAST+ tools
 #       ├── Resources/
-#       │   └── CenSoloLTR-Search.icns ← app icon
+#       │   └── LTRtrace-Search.icns ← app icon
 #       └── data/                      ← all databases & annotation data
 #           ├── ltr.sqlite
 #           ├── annotation.sqlite

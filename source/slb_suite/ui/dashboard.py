@@ -44,7 +44,7 @@ class DashboardWidget(QWidget):
 
         # ── Header ──
         header = QHBoxLayout()
-        title = QLabel("CenSoloLTR-Search")
+        title = QLabel("LTRtrace-Search")
         title.setFont(self._font(22, True))
         title.setStyleSheet(f"color: {C_PRIMARY};")
         subtitle = QLabel("— Dashboard")

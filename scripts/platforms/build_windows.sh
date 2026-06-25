@@ -1,6 +1,6 @@
 #!/bin/bash
 #=============================================================================
-# CenSoloLTR-Search — Windows Build (EXE Installer with Wizard)
+# LTRtrace-Search — Windows Build (EXE Installer with Wizard)
 #
 # Prerequisites:
 #   1. Wine + Windows Python 3.11  →  bash scripts/prepare_wine.sh
@@ -24,14 +24,14 @@ export WINEARCH="win64"
 export WINEDEBUG=-all
 
 VERSION="${1:-1.0.0}"
-APP_NAME="CenSoloLTR-Search"
+APP_NAME="LTRtrace-Search"
 PYTHON_WIN="C:\\Program Files\\Python311\\python.exe"
 
 # Convert Linux path to Windows Z: path (double-backslash for Python string safety)
 to_win() { echo "Z:${1//\//\\\\}"; }
 
 echo "╔══════════════════════════════════════════════╗"
-echo "║  CenSoloLTR-Search v${VERSION} — Windows Build║"
+echo "║  LTRtrace-Search v${VERSION} — Windows Build║"
 echo "╚══════════════════════════════════════════════╝"
 
 # ── Check prerequisites ──

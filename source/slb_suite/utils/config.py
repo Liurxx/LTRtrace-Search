@@ -1,4 +1,4 @@
-"""Global configuration and path resolution for CenSoloLTR-Search."""
+"""Global configuration and path resolution for LTRtrace-Search."""
 
 import os
 import sys
@@ -85,17 +85,17 @@ else:
 if sys.platform == 'darwin':
     BLAST_DB_DIR = os.path.join(
         os.path.expanduser('~/Library/Application Support'),
-        'CenSoloLTR-Search', 'blast_dbs',
+        'LTRtrace-Search', 'blast_dbs',
     )
 elif sys.platform == 'win32':
     BLAST_DB_DIR = os.path.join(
         os.environ.get('LOCALAPPDATA', os.path.expanduser('~')),
-        'CenSoloLTR-Search', 'blast_dbs',
+        'LTRtrace-Search', 'blast_dbs',
     )
 elif _is_frozen():
     # Linux packaged mode (AppImage): use user cache (AppImage mount is read-only)
     BLAST_DB_DIR = os.path.join(
-        os.path.expanduser('~/.cache'), 'CenSoloLTR-Search', 'blast_dbs',
+        os.path.expanduser('~/.cache'), 'LTRtrace-Search', 'blast_dbs',
     )
 else:
     BLAST_DB_DIR = os.path.join(APP_DIR, 'blast_dbs')
